@@ -40,40 +40,6 @@ function celebrate() {
 }
 
 
-// document.addEventListener('DOMContentLoaded', async () => {
-//   try {
-//     // Extract UUID from current URL or use hardcoded one
-//     const pathSegments = window.location.pathname.split('/');
-//     const uuid = pathSegments[pathSegments.length - 1];
-    
-//     const apiUrl = `https://api.loveliketa25.com.ng/invitee/${uuid}`;
-    
-//     const response = await fetch(apiUrl);
-    
-//     if (!response.ok) {
-//       throw new Error('Failed to fetch invitee data');
-//     }
-    
-//     const data = await response.json();
-    
-//     // Update the name in the DOM
-//     const nameElement = document.getElementById('fullName');
-//     nameElement.textContent = data.fullName;
-//     nameElement.classList.remove('loading');
-    
-//     // Trigger confetti celebration
-//     confetti({
-//       particleCount: 100,
-//       spread: 70,
-//       origin: { y: 0.6 }
-//     });
-    
-//   } catch (error) {
-//     console.error('Error:', error);
-//     document.getElementById('fullName').textContent = 'Special Guest';
-//   }
-// });
-
  // Function to extract UUID from hash URL
  function getUuidFromHash() {
   const hash = window.location.hash;
